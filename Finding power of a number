@@ -1,0 +1,12 @@
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+   
+    cout << "power is " << pow (5,4);
+
+    return 0;
+}
