@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,sum=0;
+    cout << "Enter output ";
+    cin >> n;
+    int temp = n;
+    while(temp>0)
+    {
+      sum = sum +(temp%10);
+      temp = temp / 10;
+    }
+    if(n%sum ==0)
+    {
+        cout << "harshad number " << n << endl;
+    }
+    else{
+        cout << "Not harshad number " << endl;
+    }
+
+    
+    return 0;
+}
