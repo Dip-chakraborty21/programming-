@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+   int i, rem, rev, temp, start, end;
+
+cout << "Enter the lower limit: ";
+   cin >> start;
+
+   cout << "Enter the upper limit: ";
+  cin >> end;
+
+cout << " palinedrome numbers are  " << endl;
+   for(i=start;i<=end;i++)
+   {
+      temp=i;
+      rev=0;
+      while(temp)
+      {
+         rem=temp%10;
+         temp=temp/10;
+         rev=rev*10+rem;
+      }
+      if(i==rev)
+       cout << i << endl;
+   }
+   return 0;
+}
