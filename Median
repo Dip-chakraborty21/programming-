@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int arr[5]={1,2,3,4,5};
+    int n=5;
+    if(n%2==0)
+    {
+        cout << (arr[((n/2)-1)]+arr[(n/2)])/2;
+    }
+    else{
+        cout << arr[(n/2)];
+    }
+    return 0;
+}
