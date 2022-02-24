@@ -1,0 +1,37 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+ 
+int main()
+{
+  int hexa[1000];
+  int i = 1, j = 0, rem, decimal = 0, binary;
+	cout << " Input a binary number: ";
+	cin >> binary;
+  while (binary > 0) 
+  {
+   rem = binary % 2;
+   decimal = decimal + rem * i;
+   i = i * 2;
+   binary = binary / 10;
+  }
+   i = 0;
+  while (decimal != 0) 
+  {
+   hexa[i] = decimal % 16;
+   decimal = decimal / 16;
+   i++;
+  }
+  cout<<" The hexadecimal value: ";
+  for (j = i - 1; j >= 0; j--)
+  {
+   if (hexa[j] > 9) 
+   {
+    cout<<char(hexa[j] + 55);
+   } 
+   else
+   {
+    cout << hexa[j];
+   }
+  }
+}
