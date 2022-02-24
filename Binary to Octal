@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+#include<math.h>
+
+
+int main()
+
+{
+   int binary, octal = 0, j = 1, rem;
+  cout<<"Enter any Binary Number: ";
+  cin >> binary;
+  while (binary != 0)
+   {
+     rem = binary % 10;
+     octal = octal + rem * j;
+     j = j * 2;
+     binary = binary / 10;
+   }
+   cout << "Equivalent octal value: " << octal << endl;
+  return 0;
+}
+
