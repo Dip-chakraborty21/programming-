@@ -1,0 +1,19 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int binary, decimal=0, i=1, rem;
+    cout<<"Enter any Binary Number: ";
+    cin>>binary;
+    while(binary!=0)
+    {
+        rem = binary%10;
+        decimal = decimal + (rem*i);
+        i = i*2;
+        binary = binary/10;
+    }
+    cout <<"Decimal Value  "<< decimal << endl;
+   
+    return 0;
+}
